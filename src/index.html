@@ -10,34 +10,57 @@
     <title>Libi</title>
 </head>
 <body>
-    <header>
+    <header class="flex">
         <nav>
             <div class="nav-bar flex">
-                <a href="" class="logo height48 flex border margin10">
+                <a href="" class="logo height48 flex margin10">
                     <p>Libi</p>
                 </a>
-                <div href="" class="genre height48 flex border margin10">
+                <div href="" class="genre height48 flex margin10">
                     <select name="book_genre" id="" class="height48">
                         <option value="">Книги</option>
                         <option value="1">Option 1</option>
                     </select>
                 </div>
-                <div href="" class="search height48 flex border margin10">
-                    <input type="text" placeholder="Пошук" class="height48">
+                <div href="" class="search height48 flex margin10">
+                    <input type="text" placeholder="Пошук" class="height48 border-radius25">
                 </div>
-                <a href="" class="language height48 flex border margin10">
+                <a href="" class="language height48 flex margin10">
                     <p>Укр</p>
                 </a>
-                <a href="" class="sign-in height48 flex border margin10 padding-left-right10">
+                <a href="" class="sign-in height48 flex margin10 padding-left-right10 border-radius25">
                     <p>Вхід</p>
                 </a>
-                <a href="" class="sign-up height48 flex border margin10 padding-left-right10">
+                <a href="" class="sign-up height48 flex margin10 padding-left-right10 border-radius25">
                     <p>Реєстрація</p>
                 </a>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="flex">
+        <article class="popular-books">
+            <div class="popular-text">
+                <h1>Популярні книги</h1>
+                <p>Найбільш прочитані книги за останній місяць</p>
+            </div>
+            <div class="popular-tiles flex">
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+                <div class="book border-radius25"></div>
+            </div>
+            <div class="circle-slider flex">
+                <div class="circle active"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 </html>

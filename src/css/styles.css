@@ -4,9 +4,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-nav {
+/* header */
+header{
     border-bottom: 1px solid #A3A3A3;
+}
+nav {
     height: 80px;
+    width: 80%;
 }
 
 .flex{
@@ -17,7 +21,6 @@ nav {
 
 .nav-bar{
     height: 80px;
-    width: 100%;
     max-width: 1436px;
     /* min-width: min-content; */
     margin-left: auto;
@@ -27,7 +30,11 @@ nav {
     justify-content: space-between;
     font-weight: 400;
     font-size: 24px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+
+.border-radius25{
+    border-radius: 25px;
 }
 
 .height48{
@@ -48,12 +55,9 @@ a{
     color: black;
 }
 
-/* .border{
-    border: 1px solid green;
-} */
-
 .logo{
     width: 191px;
+    margin-left: 0;
 }
 
 .genre{
@@ -71,7 +75,6 @@ a{
 
 .search input[type=text]{
     width: 399px;
-    border-radius: 25px;
     background-color: #C4C1C1;
     border: 1px solid #9B9595;
     color: black;
@@ -90,14 +93,62 @@ input[type=text]::placeholder{
 .sign-in{
     width: 95px;
     font-weight: 600;
-    border-radius: 25px;
     background-color: #E6B2B2;
 }
 
 .sign-up{
     width: 191px;
     font-weight: 600;
-    border-radius: 25px;
     background-color: #AE6464;
+    margin-right: 0;
 }
 
+
+/* main */
+.popular-books{
+    width: 80%;
+    max-width: 1436px;
+    border: 1px solid greenyellow;
+    margin-top: 96px;
+}
+
+.popular-tiles{
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    overflow: auto;
+}
+
+.book {
+    height: 544px;
+    min-width: 400px;
+    background-color: #D9D9D9;
+    margin-right: 23px;
+}
+
+.popular-tiles {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.popular-tiles::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
+}
+
+.circle-slider{
+    width: 64px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.active{
+    background-color: #9B9595;
+}
