@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontal Scroll Position</title>
+</head>
+<body>
+
+<div id="scrollableDiv" style="width: 300px; height: 200px; overflow-x: auto;">
+    <div style="width: 1000px; height: 200px; background-color: #eee;">
+        <!-- Content here -->
+    </div>
+</div>
+
+<script>
+    var scrollableDiv = document.getElementById('scrollableDiv');
+
+    // Додати обробник події прокрутки
+    scrollableDiv.addEventListener('scroll', function() {
+        // Отримати позицію горизонтального скролу
+        var scrollPosition = scrollableDiv.scrollLeft;
+        console.log('Horizontal scroll position:', scrollPosition);
+    });
+</script>
+
+</body>
+</html>
