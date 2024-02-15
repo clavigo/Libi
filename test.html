@@ -1,26 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Horizontal Scroll Position</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відкриття віконця на поточній сторінці</title>
+    <style>
+        /* Стилі для вікна */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+    </style>
 </head>
 <body>
+    <!-- Кнопка реєстрації -->
+    <button id="openModalBtn">Реєстрація</button>
 
-<div id="scrollableDiv" style="width: 300px; height: 200px; overflow-x: auto;">
-    <div style="width: 1000px; height: 200px; background-color: #eee;">
-        <!-- Content here -->
+    <!-- Вікно -->
+    <div id="myModal" class="modal">
+        <p>Це вікно реєстрації.</p>
+        <p><button id="closeModalBtn">Закрити</button></p>
     </div>
-</div>
 
-<script>
-    var scrollableDiv = document.getElementById('scrollableDiv');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var openModalBtn = document.getElementById('openModalBtn');
+            var modal = document.getElementById('myModal');
+            var closeModalBtn = document.getElementById('closeModalBtn');
 
-    // Додати обробник події прокрутки
-    scrollableDiv.addEventListener('scroll', function() {
-        // Отримати позицію горизонтального скролу
-        var scrollPosition = scrollableDiv.scrollLeft;
-        console.log('Horizontal scroll position:', scrollPosition);
-    });
-</script>
+            // Функція для відкриття вікна
+            function openModal() {
+                modal.style.display = 'block';
+            }
 
+            // Функція для закриття вікна
+            function closeModal() {
+                modal.style.display = 'none';
+            }
+
+            // Додавання обробника подій для кнопки відкриття вікна
+            openModalBtn.addEventListener('click', openModal);
+
+            // Додавання обробника подій для кнопки закриття вікна
+            closeModalBtn.addEventListener('click', closeModal);
+        });
+    </script>
 </body>
 </html>

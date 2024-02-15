@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,10 +28,10 @@
                 <a href="" class="language height48 flex margin10">
                     <p>Укр</p>
                 </a>
-                <a href="" class="sign-in height48 flex margin10 padding-left-right10 border-radius25">
+                <a class="sign-in sign height48 flex margin10 padding-left-right10 border-radius25" id="signIn">
                     <p>Вхід</p>
                 </a>
-                <a href="" class="sign-up height48 flex margin10 padding-left-right10 border-radius25">
+                <a class="sign-up sign height48 flex margin10 padding-left-right10 border-radius25" id="signUp">
                     <p>Реєстрація</p>
                 </a>
             </div>
@@ -215,9 +215,74 @@
                 <div class="circle change-active3"></div>
             </div>
         </article>
+        <div id="transparentDiv"></div>
+        <div id="myModalSignUp" class="modal-sign-up modal">
+            <div class="sign-up-window flex">
+                <div class="welcome">
+                    <p>Вітаємо <br> в онлайн бібліотеці Libi !</p>
+                    <div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Легкий пошук книг у бібліотеках</p>
+                        </div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Свіжі новини бібліотеки на сайті</p>
+                        </div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Замовлення книг з бібліотеки до твого дому</p>
+                        </div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Реєстрація читацького квитка онлайн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-up-data flex">
+                    <p>Введіть свої дані</p>
+                    <input type="text" placeholder="Ім'я">
+                    <input type="text" placeholder="Номер телефону / Email">
+                    <input type="text" placeholder="Придумайте пароль">
+                    <a class="changeModalBtn">Є аккаунт? Увійти</a>
+                </div>
+            </div>
+        </div>
+        <div id="myModalSignIn" class="modal-sign-in modal">
+            <div class="sign-up-window flex">
+                <div class="sign-up-data flex">
+                    <p>Введіть свої дані</p>
+                    <input type="text" placeholder="Номер телефону / Email">
+                    <input type="text" placeholder="Пароль">
+                    <a class="changeModalBtn2">Немає аккаунту? Зареєструватись</a>
+                </div>
+                <div class="welcome">
+                    <p>З поверненням <br> в онлайн бібліотеку Libi !</p>
+                    <div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Легкий пошук книг у бібліотеках</p>
+                        </div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Свіжі новини бібліотеки на сайті</p>
+                        </div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Замовлення книг з бібліотеки до твого дому</p>
+                        </div>
+                        <div>
+                            <p class="ellipse"></p>
+                            <p>Реєстрація читацького квитка онлайн</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <!-- <script src="/src/js/scripts.js"></script> -->
     <script src="/src/js/horizontal-scroll.js"></script>
+    <script src="/src/js/register.js"></script>
 </body>
 </html>
