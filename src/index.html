@@ -8,35 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
     <title>Libi</title>
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/modal.js"></script>
 </head>
 <body>
-    <header class="flex">
-        <nav>
-            <div class="nav-bar flex">
-                <a href="" class="logo height48 flex margin10">
-                    <p>Libi</p>
-                </a>
-                <div href="" class="genre height48 flex margin10">
-                    <select name="book_genre" id="" class="height48">
-                        <option value="">Книги</option>
-                        <option value="1">Option 1</option>
-                    </select>
-                </div>
-                <div href="" class="search height48 flex margin10">
-                    <input type="text" placeholder="Пошук" class="height48 border-radius25">
-                </div>
-                <a href="" class="language height48 flex margin10">
-                    <p>Укр</p>
-                </a>
-                <a class="sign-in sign height48 flex margin10 padding-left-right10 border-radius25" id="signIn">
-                    <p>Вхід</p>
-                </a>
-                <a class="sign-up sign height48 flex margin10 padding-left-right10 border-radius25" id="signUp">
-                    <p>Реєстрація</p>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <header class="flex" id="header-placeholder"></header>
     <main class="flex">
         <article class="books-list">
             <div class="list-text">
@@ -216,69 +192,8 @@
             </div>
         </article>
         <div id="transparentDiv"></div>
-        <div id="myModalSignUp" class="modal-sign-up modal">
-            <div class="sign-up-window flex">
-                <div class="welcome">
-                    <p>Вітаємо <br> в онлайн бібліотеці Libi !</p>
-                    <div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Легкий пошук книг у бібліотеках</p>
-                        </div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Свіжі новини бібліотеки на сайті</p>
-                        </div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Замовлення книг з бібліотеки до твого дому</p>
-                        </div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Реєстрація читацького квитка онлайн</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sign-up-data flex">
-                    <p>Введіть свої дані</p>
-                    <input type="text" placeholder="Ім'я">
-                    <input type="text" placeholder="Номер телефону / Email">
-                    <input type="text" placeholder="Придумайте пароль">
-                    <a class="changeModalBtn">Є аккаунт? Увійти</a>
-                </div>
-            </div>
-        </div>
-        <div id="myModalSignIn" class="modal-sign-in modal">
-            <div class="sign-up-window flex">
-                <div class="sign-up-data flex">
-                    <p>Введіть свої дані</p>
-                    <input type="text" placeholder="Номер телефону / Email">
-                    <input type="text" placeholder="Пароль">
-                    <a class="changeModalBtn2">Немає аккаунту? Зареєструватись</a>
-                </div>
-                <div class="welcome">
-                    <p>З поверненням <br> в онлайн бібліотеку Libi !</p>
-                    <div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Легкий пошук книг у бібліотеках</p>
-                        </div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Свіжі новини бібліотеки на сайті</p>
-                        </div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Замовлення книг з бібліотеки до твого дому</p>
-                        </div>
-                        <div>
-                            <p class="ellipse"></p>
-                            <p>Реєстрація читацького квитка онлайн</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="myModalSignUp" class="modal-sign-up modal"></div>
+        <div id="myModalSignIn" class="modal-sign-in modal"></div>
     </main>
     <footer></footer>
     <!-- <script src="/src/js/scripts.js"></script> -->
